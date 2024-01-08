@@ -5,12 +5,6 @@ interface Nav {
   name: string
 }
 
-// bs yhi keh rha tha
-// baat to woi hui kya farq pada isse?
-// reusable h ok or wo error kyu aa rha tha nested route karne par...dekhna h?
-// maintain hoti h library
-
-
 const Navbar = () => {
   const navs: Nav[] = [
     {id: 1, name: "about"},

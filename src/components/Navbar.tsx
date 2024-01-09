@@ -15,8 +15,8 @@ const Navbar = () => {
     <nav className="flex flex-wrap items-center justify-between mx-auto shadow-sm bg-blue-500">
       <Link className="p-4 text-3xl" to="/">LOGO</Link>
       <ul className="font-medium flex flex-row p-4 uppercase">
-        <li><Link to="/" className="px-3">home</Link></li>
-        {navs.map(nav => <li key={nav.id}><Link className="px-3" to={nav.name}>{nav.name}</Link></li>)}
+        <li><Link to="/" className="mx-3 text-white hover:text-black">home</Link></li>
+        {navs.map(nav => <li key={nav.id}><Link className="mx-3 text-white hover:text-black" to={nav.name}>{nav.name}</Link></li>)}
       </ul>
     </nav>
   )

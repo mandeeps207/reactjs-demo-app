@@ -8,6 +8,11 @@ form {
 button {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 1);
 }
+nav ul li a:hover {
+    background-color: rgb(150, 150, 150);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
 nav ul li a.active {
     background-color: rgb(230 235 241);
     color: rgb(75 85 99);

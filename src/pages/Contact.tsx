@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="text-center p-20 bg-[#e6ebf1]">
+    <div className="text-center">
       <form className="block p-10 rounded-3xl max-w-sm m-auto">
         <img src="/tech-clouds-logo.png" alt="Tech Clouds Logo" className="w-40 mx-auto" />
         <h2 className="text-2xl font-bold">Web Development</h2>

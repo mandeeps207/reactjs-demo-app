@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
         <Navbar />
-        <main className="container mx-auto">
+        <main className="p-20 bg-[#e6ebf1]">
           <Outlet />
         </main>
         <Footer />

@@ -8,11 +8,15 @@
 form {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25), -10px -10px 10px rgba(255, 255, 255, 1);
 }
-button, nav ul li a {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 1);
+nav ul li a {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
-nav ul li a:hover {
-    box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.25), 3px 3px 3px rgba(255, 255, 255, 1);
+nav ul li a.active {
+    background-color: #e6ebf1;
+    color: rgb(75 85 99);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 button:focus, button:hover {
     box-shadow: 0 0 6px rgba(255, 255, 255, 1);

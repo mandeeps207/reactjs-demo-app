@@ -16,11 +16,11 @@ const Navbar = () => {
     {id: 3, name: "blog"}
   ];
   return (
-    <nav className="flex flex-wrap items-center justify-between mx-auto shadow-sm bg-gray-300">
+    <nav className="flex flex-wrap items-end justify-between mx-auto shadow-sm bg-gradient-to-l from-gray-600 from-10% via-gray-500 via-30% to-gray-700 to-90%">
       <NavLink className="p-4 text-3xl text-white" to="/">LOGO</NavLink>
-      <ul className="font-medium flex flex-row p-4 uppercase">
-        <li className="m-2"><NavLink to="/" className="block p-2 text-white rounded-lg">home</NavLink></li>
-        {navs.map(nav => <li className="m-2" key={nav.id}><NavLink className="block p-2 text-white rounded-lg" to={nav.name}>{nav.name}</NavLink></li>)}
+      <ul className="font-medium flex flex-row uppercase">
+        <li><NavLink to="/" className="block px-4 py-2 text-white rounded-t-lg">home</NavLink></li>
+        {navs.map(nav => <li key={nav.id}><NavLink className="block px-4 py-2 text-white rounded-t-lg" to={nav.name}>{nav.name}</NavLink></li>)}
       </ul>
     </nav>
   )

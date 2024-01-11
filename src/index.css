@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    transition: all .3s ease;
-}
 form {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25), -10px -10px 10px rgba(255, 255, 255, 1);
 }
-nav ul li a {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+button {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 1);
 }
 nav ul li a.active {
-    background-color: #e6ebf1;
+    background-color: rgb(230 235 241);
     color: rgb(75 85 99);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+}
+nav ul li a.active:before, nav ul li a.active:after {
+    position: absolute;
+    bottom: -7px;
+}
+nav ul li a.active:before {
+    content: url("/left-curv.svg");
+    left: -20px;
+}
+nav ul li a.active:after {
+    content: url("/right-curv.svg");
+    right: -20px;
 }
 button:focus, button:hover {
     box-shadow: 0 0 6px rgba(255, 255, 255, 1);
 }
-
 input {
     box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.25), inset -5px -5px 5px rgba(255, 255, 255, 1);
 }

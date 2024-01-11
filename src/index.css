@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    transition: all .3s ease;
+}
 form {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25), -10px -10px 10px rgba(255, 255, 255, 1);
 }
-button {
+button, nav ul li a {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 1);
+}
+nav ul li a:hover {
+    box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.25), 3px 3px 3px rgba(255, 255, 255, 1);
 }
 button:focus, button:hover {
     box-shadow: 0 0 6px rgba(255, 255, 255, 1);

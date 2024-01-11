@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 interface Nav {
   id: number,
   name: string
 }
+
+// const boxShadow: any = ({
+//   boxShadow: "-3px -3px 3px rgba(0, 0, 0, 0.25), 3px 3px 3px rgba(255, 255, 255, 1)"
+// })
 
 const Navbar = () => {
   const navs: Nav[] = [
@@ -12,11 +16,11 @@ const Navbar = () => {
     {id: 3, name: "blog"}
   ];
   return (
-    <nav className="flex flex-wrap items-center justify-between mx-auto shadow-sm bg-blue-500">
-      <Link className="p-4 text-3xl" to="/">LOGO</Link>
+    <nav className="flex flex-wrap items-center justify-between mx-auto shadow-sm bg-gray-300">
+      <NavLink className="p-4 text-3xl text-white" to="/">LOGO</NavLink>
       <ul className="font-medium flex flex-row p-4 uppercase">
-        <li><Link to="/" className="mx-3 text-white hover:text-black">home</Link></li>
-        {navs.map(nav => <li key={nav.id}><Link className="mx-3 text-white hover:text-black" to={nav.name}>{nav.name}</Link></li>)}
+        <li className="m-2"><NavLink to="/" className="block p-2 text-white rounded-lg">home</NavLink></li>
+        {navs.map(nav => <li className="m-2" key={nav.id}><NavLink className="block p-2 text-white rounded-lg" to={nav.name}>{nav.name}</NavLink></li>)}
       </ul>
     </nav>
   )
